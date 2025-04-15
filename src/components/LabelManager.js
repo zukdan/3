@@ -1,19 +1,9 @@
 // src/components/LabelManager.js
 import React, { useState, useCallback } from 'react';
-import { LabelManagerContainer, LabelList, LabelItem, AddLabelButton, LabelInput } from './LabelManager.styles';
+import { LabelManagerContainer, LabelList, LabelItem, AddLabelButton, LabelInput , DeleteLabelButton} from './LabelManager.styles';
 import styled from 'styled-components';
 
-const DeleteLabelButton = styled.button`
-  /* Стили для кнопки удаления метки */
-  background-color: #c0392b;
-  color: white;
-  border: none;
-  border-radius: 3px;
-  padding: 2px 5px;
-  cursor: pointer;
-  margin-left: 5px;
-  font-size: 0.8em;
-`;
+
 
 function LabelManager({ data, setData, selectedCard, setSelectedCard }) {
   const [newLabelName, setNewLabelName] = useState('');

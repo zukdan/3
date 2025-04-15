@@ -1,6 +1,18 @@
 // src/components/LabelManager.styles.js
 import styled from 'styled-components';
 
+export const DeleteLabelButton = styled.button`
+  /* Стили для кнопки удаления метки */
+  background-color: #c0392b;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  padding: 2px 5px;
+  cursor: pointer;
+  margin-left: 5px;
+  font-size: 0.8em;
+`;
+
 export const LabelManagerContainer = styled.div`
   /* Стили для контейнера LabelManager */
   background-color: #f0f0f0;
@@ -49,16 +61,4 @@ export const LabelInput = styled.input`
   border: 1px solid #ccc;
   border-radius: 3px;
   margin-right: 5px;
-`;
-
-export const DeleteLabelButton = styled.button`
-  /* Стили для кнопки удаления метки */
-  background-color: #c0392b;
-  color: white;
-  border: none;
-  border-radius: 3px;
-  padding: 2px 5px;
-  cursor: pointer;
-  margin-left: 5px;
-  font-size: 0.8em;
 `;

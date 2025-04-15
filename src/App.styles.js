@@ -1,6 +1,7 @@
 // src/App.styles.js
 import styled from 'styled-components';
 
+
 export const AppContainer = styled.div`
   display: flex;
   overflow-x: auto;
